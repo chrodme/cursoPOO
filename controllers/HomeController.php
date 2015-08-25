@@ -2,8 +2,8 @@
 
 class HomeController
 {
-    public function indexAction($city)
+    public function indexAction()
     {
-
+        exit ('HOLAAAAA');
     }
 }

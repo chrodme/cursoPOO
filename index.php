@@ -7,6 +7,8 @@ require 'config.php';
 require 'helpers.php';
 //Library
 require 'Library/Request.php';
+require 'Library/Inflector.php';
+
 
 //Llamar al controlador indicado
 //controller($_GET['url']);
@@ -21,4 +23,4 @@ else
 }
 
 $request = new Request($url);
-var_dump($request->getController());
+$request->execute();
