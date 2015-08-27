@@ -8,6 +8,8 @@ require 'helpers.php';
 //Library
 require 'Library/Request.php';
 require 'Library/Inflector.php';
+require 'Library/Response.php';
+require 'Library/View.php';
 
 
 //Llamar al controlador indicado
