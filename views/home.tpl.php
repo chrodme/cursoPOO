@@ -5,7 +5,7 @@
 </head>
 <body>
 <h1><?= $titulo ?></h1>
-Aprendiendo <strong><?= $language ?></strong>
+Aprendiendo <strong><?= $titulo ?></strong>
 
 <p><a href="contactos">Contactanos</a></p>
 
