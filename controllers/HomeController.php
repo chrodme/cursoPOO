@@ -4,6 +4,6 @@ class HomeController
 {
     public function indexAction()
     {
-        return new View('home',['Titulo'=>'MejorandoPHP']);
+       return new View('home',['titulo'=>'Clase 2 PHP OO']);
     }
 }
