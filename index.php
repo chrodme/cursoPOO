@@ -4,7 +4,7 @@
  * configurar nuestra aplicacion
  */
 require 'config.php';
-require 'helpers.php';
+//require 'helpers.php';
 //Library
 require 'Library/Request.php';
 require 'Library/Inflector.php';

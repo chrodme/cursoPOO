@@ -36,6 +36,7 @@ class Request {
             $this->action = $this->defaultAction;
         }
     }
+
     public function resolveParams(&$segments)
     {
         $this->params = $segments;
@@ -51,26 +52,32 @@ class Request {
         return $this->controller;
 
     }
+
     public function getControllerClassName()
     {
         return Inflector::camel($this->getController()) . 'Controller';
     }
+
     public function getControllerFileName()
     {
         return 'controllers/'.$this->getControllerClassName().'.php';
     }
+
     public function getAction()
     {
         return $this->action;
     }
+
     public function getActionMethodName()
     {
         return Inflector::lowerCamel($this->getAction()) . 'Action';
     }
+
     public function getParams()
     {
         return $this->params;
     }
+
     public function execute()
     {
         $controllerClassName    = $this->getControllerClassName();
@@ -87,6 +94,11 @@ class Request {
 
         $response = call_user_func_array([$controller,$actionMethodName], $params);
 
+        $this->executeResponse($response);
+    }
+
+    public function executeResponse($response)
+    {
         if($response instanceof Response)
         {
             $response->execute();
@@ -95,13 +107,13 @@ class Request {
         {
             echo "en construccion";
         }
+        elseif(is_array($response))
+        {
+            echo json_encode($response);
+        }
         else
         {
             exit('Respuesta no valida');
         }
     }
-
-
-
-
 }
