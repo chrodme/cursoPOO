@@ -2,8 +2,16 @@
 
 class HomeController
 {
+    protected $vars = ['titulo'=>'Titulo del contenido del homeController','contenido'=>'Cuerpo del contenido del homeController'];
+
     public function indexAction()
     {
-       return new View('home',['titulo'=>'Clase 2 PHP OO']);
+        $vars = $this->getVars();
+        return new View('home',$vars);
     }
+    public function getVars()
+    {
+        return $this->vars;
+    }
+
 }
