@@ -3,11 +3,11 @@ class ContactosController
 {
     public function indexAction()
     {
-        return new View('contactos',['ciudad'=>'Puno']);
+        return new View('contactos',['ciudad'=>'Vacio']);
     }
     public function cityAction($city)
     {
-        exit('Contactos ciudad - '.$city);
+        return new View('contactos',['ciudad'=>$city]);
     }
 
 }
