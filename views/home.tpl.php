@@ -1,2 +1,3 @@
 
-<h4><?= $titulo ?></h4>
+<h3><?= $titulo ?></h3>
+<h4><?= $contenido ?></h4>

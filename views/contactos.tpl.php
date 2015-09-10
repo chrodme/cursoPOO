@@ -1,2 +1,1 @@
-
-<h3>Ciudad : <?= $ciudad ?></h3>
+<h3>Enlace : <p><a href="city"><?= $ciudad ?></a></p></h3>
