@@ -2,7 +2,7 @@
 
 class HomeController
 {
-    protected $vars = ['titulo'=>'Titulo del contenido del homeController','contenido'=>'Cuerpo del contenido del homeController'];
+    protected $vars = ['titulo'=>'Titulo del contenido del homeController','contenido'=>'Cuerpo del contenido del homeController','encabezado'=>'Encabezado del contenido 1'];
 
     public function indexAction()
     {
