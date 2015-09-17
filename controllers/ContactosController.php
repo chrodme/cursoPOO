@@ -3,7 +3,7 @@ class ContactosController
 {
     public function indexAction()
     {
-        return new View('contactos',['ciudad'=>'Vacio']);
+        return new View('contactos',['titulo'=>'Contactos','contenido'=>'']);
     }
     public function cityAction($city)
     {

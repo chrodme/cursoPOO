@@ -30,52 +30,13 @@
 
 <body>
 
-    <div class="container">
-        <div class="header clearfix">
-            <nav>
-                <ul class="nav nav-pills pull-right">
-                    <li role="presentation" class="active"><a href="home">Home</a></li>
-                    <li role="presentation"><a href="about">About</a></li>
-                    <li role="presentation"><a href="Contactos">Contactos</a></li>
-                    <li role="presentation"><a href="help">Ayuda</a></li>
-                </ul>
-            </nav>
-            <h3 class="text-muted">Mini FrameWork PHP - POO</h3>
-        </div>
-
-        <div class="jumbotron">
-            <h1>Area 1</h1>
-            <p class="lead">Contenido del area 1</p>
-            <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
-        </div>
-    </div>
+    <?= $tpl_content; ?>
 
     <div class="container">
-        <div class="row marketing">
-            <div class="col-lg-6">
-                <h4>
-                <?= $tpl_content; ?>
-                </h4>
-            </div>
-
-            <div class="col-lg-6">
-
-                <h4>Titulo de la nueva variable</h4>
-                <p>Contenido del valor de la otra variable</p>
-
-                <h4>Subheading</h4>
-                <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-                <h4><?= $tpl_content1; ?></h4>
-                <p><?= $tpl_content2; ?></p>
-
-            </div>
-        </div>
-
         <footer class="footer">
             <p>&copy; Company 2015</p>
         </footer>
-    </div> <!-- /container -->
+    </div>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="bootstrap/js/ie10-viewport-bug-workaround.js"></script>
 </body>

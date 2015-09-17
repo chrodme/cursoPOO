@@ -11,10 +11,6 @@ require 'Library/Inflector.php';
 require 'Library/Response.php';
 require 'Library/View.php';
 
-
-//Llamar al controlador indicado
-//controller($_GET['url']);
-
 if(empty($_GET['url']))
 {
     $url = "";
