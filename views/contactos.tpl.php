@@ -24,13 +24,9 @@
                 <?= $titulo; ?>
             </h4>
         </div>
-
         <div class="col-lg-6">
-
-
             <h4><?= $titulo; ?></h4>
             <p><?= $contenido; ?></p>
-
         </div>
     </div>
 </div>

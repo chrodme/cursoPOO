@@ -29,7 +29,6 @@
 </head>
 
 <body>
-
     <?= $tpl_content; ?>
 
     <div class="container">

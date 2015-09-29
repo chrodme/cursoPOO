@@ -3,8 +3,8 @@
         <nav>
             <ul class="nav nav-pills pull-right">
                 <li role="presentation" class=""><a href="home">Home</a></li>
-                <li role="presentation" class=""><a href="about">About</a></li>
-                <li role="presentation" class=""><a href="Contactos">Contactos</a></li>
+                <li role="presentation"><a href="about">About</a></li>
+                <li role="presentation"><a href="Contactos">Contactos</a></li>
                 <li role="presentation" class="active"><a href="help">Ayuda</a></li>
             </ul>
         </nav>
@@ -20,17 +20,13 @@
 <div class="container">
     <div class="row marketing">
         <div class="col-lg-6">
-            <h4>
+             <h4>
                 <?= $titulo; ?>
             </h4>
         </div>
-
         <div class="col-lg-6">
-
-
             <h4><?= $titulo; ?></h4>
             <p><?= $contenido; ?></p>
-
         </div>
     </div>
 </div>

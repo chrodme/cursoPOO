@@ -2,10 +2,12 @@
     <div class="header clearfix">
         <nav>
             <ul class="nav nav-pills pull-right">
+
                 <li role="presentation" class=""><a href="home">Home</a></li>
                 <li role="presentation" class="active"><a href="about">About</a></li>
                 <li role="presentation" class=""><a href="Contactos">Contactos</a></li>
                 <li role="presentation" class=""><a href="help">Ayuda</a></li>
+
             </ul>
         </nav>
         <h3 class="text-muted">Mini FrameWork PHP - POO</h3>
