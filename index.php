@@ -10,6 +10,7 @@ require 'Library/Request.php';
 require 'Library/Inflector.php';
 require 'Library/Response.php';
 require 'Library/View.php';
+require 'library/DataBAse.php';
 
 if(empty($_GET['url']))
 {
