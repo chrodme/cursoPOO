@@ -28,7 +28,7 @@ class DataBase
     public function makeQuery($query)
     {
         //$this->getLink();
-        if (!$this->result = mysqli_query($query))
+        if (!$this->result = mysqli_query($this->getLink(),$query))
         {
             $this->result = null;
             exit;
